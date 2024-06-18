@@ -1,0 +1,109 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100%;
+}
+
+.header {
+    text-align: center;
+    color: #2c423f;
+    background-color: #d6d6d4;
+    font-family: 'Press Start 2P';
+    padding: 20px;
+    opacity: 0;
+    animation: slideAndfadeIn 3s ease-in-out forwards;
+}
+
+@keyframes slideAndfadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);        
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    } 
+}
+
+.quiz-container {
+    background-color: #829191;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+/*
+margin = external spacing
+padding = internal spacing
+*/
+
+.progress-bar-container {
+    width: 90%;
+    height: 12px;
+    margin: auto;
+    background-color: #2c423f;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    width: 10%;
+    height: 12px;
+    background-color: #d8e0cf;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.timer {
+    background-color: #829191;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-family: 'Press Start 2P';
+}
+
+.option-container {
+    margin: 15px;
+    height: fit-content;
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5px;
+    background-color: #d8e0cf;
+    border: none;
+    border-radius: 5px;
+    font-family: Times;
+    cursor: pointer;
+    font-size: 17px;
+
+}
+
+.option-btn:hover {
+    background-color: #949B96;
+}
+
+.question {
+    font-family: 'Press Start 2P';
+    font-size: 14px;
+
+}
+
+.timer-settings {
+    font-family: Times;
+
+}
